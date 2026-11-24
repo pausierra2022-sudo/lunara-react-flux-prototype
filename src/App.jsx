@@ -12,14 +12,12 @@ export default function App() {
 
     // Configura el sistema de navegación mediante React Router.
     <BrowserRouter
-      future={{
-        // Activa la transición de navegación prevista para React Router v7.
-        v7_startTransition: true,
-
-        // Activa el comportamiento de rutas relativas previsto para React Router v7.
-        v7_relativeSplatPath: true
-      }}
-    >
+  basename={import.meta.env.BASE_URL}
+  future={{
+    v7_startTransition: true,
+    v7_relativeSplatPath: true
+  }}
+>
 
       {/* Presenta la barra de navegación en las diferentes vistas. */}
       <Navbar />
