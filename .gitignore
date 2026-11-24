@@ -1,0 +1,19 @@
+
+# Dependencias
+node_modules/
+
+# Archivos generados por Vite
+dist/
+
+# Archivos locales y variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración local del editor
+.vscode/*
+!.vscode/extensions.json
