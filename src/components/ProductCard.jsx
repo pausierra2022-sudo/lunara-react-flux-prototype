@@ -44,7 +44,7 @@ export default function ProductCard({ product }) {
 
           {/* Imagen del producto con una alternativa si no se puede cargar. */}
           <img
-            src={product.imagen}
+            src={`${import.meta.env.BASE_URL}${product.imagen}`}
             alt={product.nombre}
             loading="lazy"
             onError={(e) => {
